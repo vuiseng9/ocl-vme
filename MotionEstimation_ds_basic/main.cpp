@@ -26,7 +26,7 @@
 #include <fstream>
 #include <algorithm>
 #include <CL/cl.hpp>
-#include <CL/cl_ext.h>
+#include <CL/cl_ext_intel.h>
 
 #include "yuv_utils.h"
 #include "cmdparser.hpp"

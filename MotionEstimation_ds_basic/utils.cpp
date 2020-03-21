@@ -27,7 +27,7 @@
 #include <memory.h>
 
 #include <CL/cl.h>
-#include <CL/cl_ext.h>
+#include <CL/cl_ext_intel.h>
 #include "utils.h"
 #include <assert.h>
 

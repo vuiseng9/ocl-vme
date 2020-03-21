@@ -39,7 +39,7 @@
 #include <algorithm>
 
 #include <CL/cl.hpp>
-#include <CL/cl_ext.h>
+#include <CL/cl_ext_intel.h>
 #include <CL/cl_intel_device_side_avc_motion_estimation.h>
 
 #include "../common/yuv_utils.h"
