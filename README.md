@@ -39,3 +39,22 @@ cd /home/ocl-vme/MotionEstimation_ds_basic
 ```
 
 For VmeApps which are advanced examples, please run thier respective ```README.txt``` and ```./MotionEstimation -h``` to find out the usage.
+
+## **Motion Vector extraction**
+```ime_mv_extract/``` is modified from to convert motion vectors (MVs) to linear format, ie in ascending x and y direction from the initial Macroblock-based raster scan order. Note that we use *VME* (Video Motion Estimation) and *IME* (Intel Motion Estimation) interchangeably.
+
+```bash
+### Build
+cd ocl-vme/ime_mv_extract/
+mkdir build && cd build
+cmake ..
+make
+
+### Run
+cd ocl-vme/ime_mv_extract/
+./run_ime_mv_extract.sh
+```
+
+The example ```./run_ime_mv_extract.sh``` runs on the two frames of Dimetrodon.yuv. It creates Dimetrodon.MV.yuv which is a visualization of Motion Vector. On top of that, it creates a .flo and a dense .flo which a type of format representing MV in linear format. The difference between dense and non-dense .flo is that dense.flo has the MV upsampled to its original resolution and non-dense.flo is the VME resolution, say 1 MV per 4x4 pixel. Please see the code if you would like to understand the routine of unpacking MV to linear format. Caveat: The MV extraction currently does not consider the prediction mode of the macroblock yet.
+
+
