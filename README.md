@@ -21,6 +21,7 @@ Alternatively, you can pull this image to run locally, however it only works on 
 ```bash
 sudo docker pull vuiseng9/ocl-vme-dev
 ```
+[Image Link](https://hub.docker.com/repository/docker/vuiseng9/ocl-vme-dev)
 
 ### Run Docker
 The following script returns a docker runtime shell.
