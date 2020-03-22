@@ -16,12 +16,11 @@ cd ocl-vme
 sudo docker build . -f docker/Dockerfile -t ocl-vme-dev
 ```
 
-### Prebuilt Docker Image
+### [Prebuilt Docker Image](https://hub.docker.com/repository/docker/vuiseng9/ocl-vme-dev)
 Alternatively, you can pull this image to run locally, however it only works on compatible hardware.
 ```bash
 sudo docker pull vuiseng9/ocl-vme-dev
 ```
-[Image Link](https://hub.docker.com/repository/docker/vuiseng9/ocl-vme-dev)
 
 ### Run Docker
 The following script returns a docker runtime shell.
