@@ -4,6 +4,7 @@ WORKDIR /home
 
 COPY ./MotionEstimation_ds_basic /home/ocl-vme/MotionEstimation_ds_basic/
 COPY ./VmeApps /home/ocl-vme/VmeApps/
+COPY ./ime_mv_extract /home/ocl-vme/ime_mv_extract
 
 RUN apt-get update && apt-get install -y \
     git vim curl wget zip qtcreator; \
@@ -64,5 +65,9 @@ RUN cd /home/ocl-vme/MotionEstimation_ds_basic && make && \
     ln -sv /home/ocl-vme/MotionEstimation_ds_basic/video_1920x1080_5frames.yuv . && \
     cd /home/ocl-vme/VmeApps/vme_ds_multi_ref_hme/MotionEstimation && make && \
     ln -sv /home/ocl-vme/MotionEstimation_ds_basic/video_1920x1080_5frames.yuv . 
+
+RUN cd /home/ocl-vme/ime_mv_extract && \
+    mkdir build && cd build && \
+    cmake .. && make
 
 WORKDIR /home/ocl-vme

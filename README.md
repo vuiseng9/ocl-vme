@@ -55,6 +55,6 @@ cd ocl-vme/ime_mv_extract/
 ./run_ime_mv_extract.sh
 ```
 
-The example ```./run_ime_mv_extract.sh``` runs on the two frames of Dimetrodon.yuv. It creates Dimetrodon.MV.yuv which is a visualization of Motion Vector. On top of that, it creates a .flo and a dense .flo which a type of format representing MV in linear format. The difference between dense and non-dense .flo is that dense.flo has the MV upsampled to its original resolution and non-dense.flo is the VME resolution, say 1 MV per 4x4 pixel. Please see the code if you would like to understand the routine of unpacking MV to linear format. Caveat: The MV extraction currently does not consider the prediction mode of the macroblock yet.
+The example ```./run_ime_mv_extract.sh``` runs with two frames yuv - Dimetrodon.yuv. It creates Dimetrodon.MV.yuv which is a visualization of Motion Vector (this is function provided by Intel examples). On top of that, it creates a .flo and a dense .flo which a type of format representing MV in linear format. The difference between dense and non-dense .flo is that dense.flo has the MV upsampled to its original resolution and non-dense.flo is the VME resolution, say 1 MV per 4x4 pixel. Please see the code if you would like to understand the routine of unpacking MV to linear format. Caveat: The MV extraction currently does not consider the prediction mode of the macroblock yet.
 
 
