@@ -1,6 +1,6 @@
 # ocl-vme
 
-This repo aims to provide a containerized development environment for OpenCL extensions of Intel Video Motion Estimation (VME). We containerize the two sets of example in this article https://software.intel.com/en-us/articles/intro-ds-vme
+This repo aims to provide a containerized development environment for OpenCL Applications with the extensions of Intel Video Motion Estimation (VME). We containerize the two sets of example in this article https://software.intel.com/en-us/articles/intro-ds-vme
 
 > Tested on 6th Intel Core i7 with Gen 9 Graphics (i7-6770HQ - Skull Canyon NUC) 
 
@@ -29,5 +29,13 @@ cd ocl-vme
 ./docker/run_docker.sh
 ```
 
+### Run Examples
+Following are performed in the container runtime.
 
+```bash
+# The basic usage of VME
+cd /home/ocl-vme/MotionEstimation_ds_basic
+./run.sh
+```
 
+For VmeApps which are advanced examples, please run ```./MotionEstimation -h``` to find out the usage.
