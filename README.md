@@ -38,4 +38,4 @@ cd /home/ocl-vme/MotionEstimation_ds_basic
 ./run.sh
 ```
 
-For VmeApps which are advanced examples, please run ```./MotionEstimation -h``` to find out the usage.
+For VmeApps which are advanced examples, please run thier respective ```README.txt``` and ```./MotionEstimation -h``` to find out the usage.
