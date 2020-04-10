@@ -1,0 +1,2 @@
+This host-callable-vme is adapted from this blog
+https://software.intel.com/en-us/articles/video-motion-estimation-using-opencl
